@@ -2,13 +2,10 @@ import React from "react";
 import { toast } from "react-toastify";
 
 const Question = ({ query }) => {
-  const { options, id, question, correctAnswer } = query;
-
-  console.log(correctAnswer);
-  let answer;
+  const { options, question, correctAnswer } = query;
 
   const handleCheckAnswer = (e) => {
-    answer = e.target.innerText;
+    const answer = e.target.textContent;
     if (correctAnswer === answer) {
       toast.success("Correct Answer", { autoClose: 800 });
     } else {
