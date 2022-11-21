@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <>
       <App />
-      <ToastContainer />
+      <ToastContainer position="top-center" />
     </>
   </React.StrictMode>
 );

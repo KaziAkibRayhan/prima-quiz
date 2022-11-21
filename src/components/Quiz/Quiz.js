@@ -8,7 +8,7 @@ const Quiz = () => {
 
   return (
     <div>
-      <h2 className="text-3xl">Quiz Of {name}</h2>
+      <h2 className="text-3xl mt-4 p-2">Quiz Of: {name}</h2>
       <div>
         {questions.map((query, idx) => (
           <Question key={idx} query={query} total={total}></Question>
