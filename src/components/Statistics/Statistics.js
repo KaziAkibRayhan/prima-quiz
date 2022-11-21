@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Line,
-  LineChart,
-  Tooltip,
-  XAxis,
-  YAxis,
-  ResponsiveContainer,
-} from "recharts";
+import { Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 
 const Statistics = () => {
   const data = [
