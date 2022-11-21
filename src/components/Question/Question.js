@@ -7,7 +7,7 @@ const Question = ({ query }) => {
   const { options, question, correctAnswer } = query;
 
   const handleShowAnswer = () => {
-    toast(correctAnswer, {autoClose: 800,});
+    toast(correctAnswer, { autoClose: 800 });
   };
 
   const handleCheckAnswer = (e) => {
@@ -24,6 +24,7 @@ const Question = ({ query }) => {
       <div className="flex justify-evenly items-center">
         <h3 className="text-2xl">Quiz: {question}</h3>
         <EyeIcon
+          title="Show the Correct Answer"
           onClick={handleShowAnswer}
           className="h-6 w-6 text-blue-500 hover:text-blue-700 cursor-pointer"
         />
